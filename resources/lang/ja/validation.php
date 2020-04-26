@@ -154,3 +154,4 @@ return [
           'hobby' => '趣味',
           'Self-introduction' => '自己紹介'
           ],
+];
