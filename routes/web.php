@@ -20,6 +20,11 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::post('news/create', 'Admin\NewsController@create');
     Route::post('profile/create','Admin\ProfileController@create');
     Route::post('profile/edit','Admin\ProfileController@update');
+    Route::get('news', 'Admin\NewsController@index')->middleware('auth'); 
+    Route::get('news/edit', 'Admin\NewsController@edit')->middleware('auth'); 
+    Route::post('news/edit', 'Admin\NewsController@update')->middleware('auth');
+    Route::get('news/delete', 'Admin\NewsController@delete')->middleware('auth');
+    
 });
 
 //課題３
@@ -34,3 +39,4 @@ Route::get('admin/profile/edit','Admin\ProfileController@edit')->middleware('aut
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

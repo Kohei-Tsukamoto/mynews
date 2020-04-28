@@ -18,9 +18,9 @@ class CreateNewsTable extends Migration
             $table->timestamps();
             $table->string('body');  
             $table->string('image_path')->nullable();  
+            $table->string('title');
         });
     }
-
     /**
      * Reverse the migrations.
      *

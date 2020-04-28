@@ -14,4 +14,7 @@ class Profile extends Model
         'Self-introduction' => 'required'
         
     );
+    
+    protected $guarded = ['id'];
+
 }
