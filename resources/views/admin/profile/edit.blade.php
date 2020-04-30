@@ -24,13 +24,13 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="body">性別</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value ="{{ $profile_form->name }}">
+                            <input type="text" class="form-control" name="gender" value ="{{ $profile_form->gender }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="body">趣味</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="hobby" value ="{{ $profile_form->name }}">
+                            <input type="text" class="form-control" name="hobby" value ="{{ $profile_form->hobby }}">
                         </div>
                     </div>
                     <div class="form-group row">
